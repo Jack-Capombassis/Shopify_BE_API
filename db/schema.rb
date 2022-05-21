@@ -16,8 +16,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_20_162207) do
     t.string "country_code_of_origin"
     t.string "province_code_of_origin"
     t.string "sku", null: false
-    t.boolean "tracked", default: false
-    t.boolean "requires_shipping", default: false
+    t.boolean "tracked", default: false, null: false
+    t.boolean "requires_shipping", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

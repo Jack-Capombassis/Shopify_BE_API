@@ -6,7 +6,7 @@ class CreateInventoryItems < ActiveRecord::Migration[7.0]
       t.string "province_code_of_origin"
       t.string "sku", null: false
       t.boolean "tracked", default: false
-      t.boolean "requires_shipping", default: false
+      t.boolean "requires_shipping" default: false
       t.timestamps
     end
   end
